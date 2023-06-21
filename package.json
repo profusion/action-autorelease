@@ -1,0 +1,46 @@
+{
+  "name": "autorelease",
+  "version": "1.0.0",
+  "description": "Automatically create a release whenever the version changes in a properties file",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write '**/*.ts'",
+    "format-check": "prettier --check '**/*.ts'",
+    "lint": "eslint src/**/*.ts",
+    "package": "ncc build --source-map --license licenses.txt",
+    "all": "npm run build && npm run format && npm run lint && npm run package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profusion/action-autorelease.git"
+  },
+  "keywords": [
+    "actions",
+    "github",
+    "auto",
+    "release",
+    "autorelease"
+  ],
+  "author": "Ricardo Dalarme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/profusion/action-autorelease/issues"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "properties-reader": "^2.2.0"
+  },
+  "homepage": "https://github.com/profusion/action-autorelease#readme",
+  "devDependencies": {
+    "@types/node": "16.18.36",
+    "@types/properties-reader": "^2.1.1",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vercel/ncc": "^0.36.1",
+    "eslint": "^8.43.0",
+    "eslint-plugin-github": "^4.8.0",
+    "prettier": "^2.8.8",
+    "typescript": "5.0.4"
+  }
+}
