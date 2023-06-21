@@ -1,0 +1,26 @@
+name: "Create releases based on a properties file"
+description: "Automatically create releases based on a properties file."
+author: "ProFUSION"
+
+inputs:
+  properties_path:
+    description: "Relative path for the properties file."
+    required: true
+  property_name:
+    description: "Name of the property to read."
+    required: true
+  github_token:
+    description: "The GITHUB_TOKEN secret"
+    required: true
+  tag_prefix:
+    description: "Prefix for the tag"
+  tag_suffix:
+    description: "Suffix for the tag"
+
+outputs:
+  tag_name:
+    description: "The tag name"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
