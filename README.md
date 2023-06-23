@@ -49,3 +49,16 @@ This **order** is important!
 4. `tag_prefix`: A prefix can be used to add text before the tag name. For example, if `tag_prefix` is set to `v`, then the tag would be labeled as `v1.0.0`.
 
 5. `tag_suffix`: Text can also be applied to the end of the tag by setting `tag_suffix`. For example, if `tag_suffix` is ` (beta)`, the tag would be `1.0.0 (beta)`.
+
+## Development
+
+In order to contribute, clone the repository and set up husky hooks prior to
+submitting a patch:
+
+```bash
+git clone git@github.com:profusion/action-autorelease.git
+cd action-autorelease
+yarn
+yarn prepare
+yarn all # run build, format, lint and package
+```
