@@ -12,6 +12,11 @@
     "all": "npm run build && npm run format && npm run lint && npm run package",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{ts, js}": [
+      "eslint --max-warnings=0"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/profusion/action-autorelease.git"
@@ -44,6 +49,7 @@
     "eslint": "^8.43.0",
     "eslint-plugin-github": "^4.8.0",
     "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "typescript": "5.0.4"
   }
