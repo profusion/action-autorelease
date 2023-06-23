@@ -2,10 +2,6 @@
 
 This script enables the automatic creation of GitHub releases when a specific property in a properties file changes. It can be useful for publishing packages automatically when certain properties, such as version numbers, change.
 
-
-## Usage
-The following is an example .github/workflows/main.yml that will execute when a push to the main branch occurs.
-
 ## Usage
 
 The following is an example `.github/workflows/main.yml` that will execute when a `push` to the `main` branch occurs.
