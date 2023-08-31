@@ -46,7 +46,7 @@
     "@types/properties-reader": "^2.1.1",
     "@typescript-eslint/parser": "^5.60.0",
     "@vercel/ncc": "^0.36.1",
-    "eslint": "^8.43.0",
+    "eslint": "^8.48.0",
     "eslint-plugin-github": "^4.8.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
